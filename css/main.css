@@ -1,10 +1,8 @@
 * {
     padding:0px;
     margin:0px;
-    font-family: Arial,Helvetica,sans-serif;
-    font-weight: 100;
-    font-size: 12px;
     color: white;
+    font-family: Arial,Helvetica,sans-serif;
 }
 
 body {
@@ -40,7 +38,7 @@ h3, h3 a:link,  h3 a:visited{
 }
 
 h5{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 2px;
 }
 
@@ -95,6 +93,8 @@ tt, code, kbd, samp {
 
 #content{
     line-height: 1.5em;
+    font-weight: 100;
+    font-size: 12px;
 }
 
 #content h2, #content h3, #content h4, #content h5, #content h6 {
@@ -162,6 +162,8 @@ div.post-body p {
     left:120px;
     width: 300px;
     height:25px;
+    font-weight: 100;
+    font-size: 12px;
 }
 
 ul.hmenu{
@@ -182,3 +184,4 @@ ul.hmenu li {
 ul.hmenu h5 a:link,  ul.hmenu h5 a:visited{
     display:block;
 }
+
