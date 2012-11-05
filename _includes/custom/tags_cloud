@@ -1,0 +1,44 @@
+{% comment %}<!--
+The tags_list include is a listing helper for tags.
+Usage:
+  1) assign the 'tags_list' variable to a valid array of tags.
+  2) include JB/tags_list
+  example:
+    <ul>
+  	  {% assign tags_list = site.tags %}  
+  	  {% include custom/tags_cloud %}
+  	</ul>
+  
+  Notes: 
+    Tags can be either a Hash of tag objects (hashes) or an Array of tag-names (strings).
+    The encapsulating 'if' statement checks whether tags_list is a Hash or Array.
+    site.tags is a Hash while page.tags is an array.
+    
+  This helper can be seen in use at: ../_layouts/default.html
+-->{% endcomment %}
+<script type="text/javascript">
+ $(document).ready(function() {
+   if( ! $('#myCloudCanvas').tagcanvas({
+     textColour : '#000000',
+     outlineThickness : 1,
+     maxSpeed : 0.03,
+     depth : 0.75,
+	 weight : true,
+     weightMode : 'both'
+   })) {
+     // TagCanvas failed to load
+     $('#mytagcloud').hide();
+        }
+   // your other jQuery stuff here...
+  });
+</script>
+<div id="mytagcloud">
+	<canvas width="250" height="200" id="myCloudCanvas">
+		<p>Ops, your browser sucks.</p>
+		<ul>
+		{% for tag in site.tags %} 
+			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" style="font-size: {{ tag[1].size |times:6 |plus:9 }}px">{{ tag[0] }}</a></li>
+		{% endfor %}
+		</ul>
+	<canvas>
+</div>
