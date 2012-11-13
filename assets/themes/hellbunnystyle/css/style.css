@@ -13,6 +13,9 @@ html, body {
 .navbar .nav > li > a {
 	font-weight: bold
 }
+#nav-block {
+	height: 40px;
+}
 a.brand {
 	margin: 0;
 }
@@ -51,7 +54,7 @@ a.brand {
 	margin-left: 5px;
 }
 #content-body {
-	padding-top: 40px;
+	//padding-top: 40px;
 	width: 1000px;
 }
 #content-body div.content{
@@ -155,3 +158,10 @@ footer {
 	font-size: 14px;
 	line-height: 24px;
 }
+.error {
+	color: red;
+}
+/* .error a{
+	color: red;
+}
+*/

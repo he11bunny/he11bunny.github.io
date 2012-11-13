@@ -27,7 +27,8 @@ Usage:
      weightMode : 'both'
    })) {
      // TagCanvas failed to load
-     $('#mytagcloud').hide();
+     $('#myCloudCanvas').hide();
+     $('#mytagcloud .error').show();
         }
    // your other jQuery stuff here...
   });
@@ -40,5 +41,6 @@ Usage:
 			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" style="font-size: {{ tag[1].size |times:6 |plus:9 }}px">{{ tag[0] }}</a></li>
 		{% endfor %}
 		</ul>
-	<canvas>
+	</canvas>
+	<h3 class="error" style="display:none">Your browser sucks, <a href="http://www.google.com/chrome" target="_blank">chrome</a> is a better chioce.</h3>
 </div>
