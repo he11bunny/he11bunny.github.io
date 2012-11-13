@@ -18,7 +18,7 @@ Usage:
 -->{% endcomment %}
 <script type="text/javascript">
  $(document).ready(function() {
-   if( ! $('#myCloudCanvas').tagcanvas({
+   if( ! $('#mycateCloudCanvas').tagcanvas({
      textColour : '#000000',
      outlineThickness : 1,
      maxSpeed : 0.03,
@@ -32,12 +32,12 @@ Usage:
    // your other jQuery stuff here...
   });
 </script>
-<div id="mytagcloud">
-	<canvas width="250" height="155" id="myCloudCanvas" class="cloudCanvas">
+<div id="mycategorycloud">
+	<canvas width="250" height="155" id="mycateCloudCanvas" class="cloudCanvas">
 		<p>Ops, your browser sucks.</p>
 		<ul>
-		{% for tag in site.tags %} 
-			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref" style="font-size: {{ tag[1].size |times:6 |plus:9 }}px">{{ tag[0] }}</a></li>
+		{% for cate in site.categories %} 
+			<li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ cate[0] }}-ref" style="font-size: {{ cate[1].size |times:6 |plus:9 }}px">{{ cate[0] }}</a></li>
 		{% endfor %}
 		</ul>
 	<canvas>

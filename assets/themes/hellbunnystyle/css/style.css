@@ -17,10 +17,18 @@ a.brand {
 	margin: 0;
 }
 .container > footer {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .container > footer p {
   text-align: center; /* center align it with the container */
+}
+.rss a{
+	margin-top: 2px;
+	margin-right: -8px;
+	cursor: pointer;
+}
+.rss a:hover{
+	opacity: 0.6;
 }
 .sharing {
 	width: 150px;
@@ -31,7 +39,7 @@ a.brand {
 .content {
   background-color: #fff;
   padding: 20px;
-  margin: 40px -28px; /* negative indent the amount of the padding to maintain the grid system */
+  /*margin: -40px -4px 42px 4px; /* negative indent the amount of the padding to maintain the grid system */
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
@@ -39,21 +47,37 @@ a.brand {
      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
+.col-container {
+	margin-left: 5px;
+}
+#content-body {
+	padding-top: 40px;
+	width: 1000px;
+}
+#content-body div.content{
+	margin-top: 5px;
+}
 
 /* Page header tweaks */
 .page-header {
   background-color: #f5f5f5;
+}
+div.span8 .page-header {
   padding: 20px 20px 10px;
   margin: -20px -20px 20px;
 }
-
+div.span4 .page-header {
+  padding: 10px 20px 10px;
+  margin: -20px -20px 20px;
+}
 .topbar .btn {
   border: 0;
 }
-
+footer {
+	clear:both;
+}
 
 /* tag_box ======================================================== */
-
 .tag_box {
 	list-style:none;
 	margin:0;
@@ -85,7 +109,49 @@ a.brand {
 	color:#FFF;
 }
 	
-#myCloudCanvas {
+.cloudCanvas {
 	border: 4px solid #EEE;
 	border-radius: 20px;
+}
+
+/* page title ==================================================== */
+.post-info div {
+	display: inline-block;
+}
+.post-info div.category {
+	float:right;
+	margin-right: 1em;
+}
+
+/* home page ==================================================== */
+.post-preview {
+	margin: 10px 0 0 10px;
+	border-top: 1px dotted #ccc;
+}
+.post-preview p{
+	margin: 0 0 0 10px;
+}
+.post-preview h3{
+	margin: 10px 0 10px 0;
+}
+.myinfo-box {
+	width: 220px;
+	height: 120px;
+}
+.myinfo-box img{
+	float: left;
+}
+.profile-box {
+	width: 80px;
+	height: 120px;
+	float: left;
+	margin-left: 10px;
+	border-left: 1px dashed #CCC;
+}
+.profile-box span{
+	margin-left: 10px;
+	border-bottom: 1px dotted #CCC;
+	color: #999;
+	font-size: 14px;
+	line-height: 24px;
 }

@@ -39,6 +39,13 @@
             {% include JB/pages_list %}
           </ul>
           <ul class="nav pull-right">
+			  <!--
+			  <li class="rss">
+			  <a href="{{}}">
+				  <img src="{{ ASSET_PATH }}/images/rss.png"></img>
+			  </a>
+			  </li>
+			  -->
 			  <li class="sharing">
 			<!-- AddThis Button BEGIN -->
 				<div class="addthis_toolbox addthis_default_style ">
@@ -51,21 +58,19 @@
 				</div>
 				<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 				<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-509776e06d71b495"></script>
-			<!-- AddThis Button END -->
+			  </li>
 			  <li class="divider-vertical"></li>
 			  <li>
-				  <a class="brand" style="padding-left: 30px" href="https://www.github.com/{{ site.author.github }}">git</a>
+				  <a class="brand" title="Fork me on Github" style="padding-left: 30px" href="https://github.com/zeratel/zeratel.github.com">git</a>
 			  </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div id="content-body" class="container">
 
-      <div class="content">
         {{ content }}
-      </div>
 
       <footer>
         <p>&copy; {{ site.author.name }} 2012 
@@ -73,8 +78,8 @@
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
         </p>
       </footer>
-
     </div> <!-- /container -->
+
 
     {% include JB/analytics %}
   </body>
