@@ -64,12 +64,12 @@ a.brand {
  .page-header {
     background-color: #f5f5f5;
 }
-div.span8 .page-header {
-    padding: 20px 20px 10px;
-    margin: -20px -20px 20px;
-}
 div.span4 .page-header {
     padding: 10px 20px 10px;
+    margin: -20px -20px 20px;
+}
+.content .page-header {
+    padding: 20px 20px 10px;
     margin: -20px -20px 20px;
 }
 .topbar .btn {
@@ -120,6 +120,10 @@ footer {
 .post-info div.category {
     float:right;
     margin-right: 1em;
+}
+.post-info {
+    margin-left:5px;
+    color:#999;
 }
 /* home page ==================================================== */
  .post-preview {
