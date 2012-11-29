@@ -2,7 +2,7 @@
 layout: post
 description: ""
 category: math 
-tags: [math,mathjax]
+tags: [math, mathjax]
 ---
 {% include JB/setup %}
 
@@ -27,7 +27,7 @@ $$ f(x)=\sum_{n=0}^\infty a^n\cos(b^n\pi x) $$
 $$ \iint_{D}(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})d\sigma=\oint_{L}Pdx+Pdy $$
 
 ####好复杂的公式：
-$$ f(x)=\frac{1}{2\pi}\int_{-\pi}^\pi f(d)dx +\sum_{n=1}^{\infty}( \frac{\cos nx}{\pi}\int_{-\pi}^{\pi}f(x)\cos nxdx + \frac{\sin nx}{\pi}\int_{-\pi}^{\pi}f(x)\sin nxdx ), \\\\ n=0,1,2,\cdots . $$
+$$ f(x)=\frac{1}{2\pi}\int_{-\pi}^\pi f(x)dx +\sum_{n=1}^{\infty}( \frac{\cos nx}{\pi}\int_{-\pi}^{\pi}f(x)\cos nxdx + \frac{\sin nx}{\pi}\int_{-\pi}^{\pi}f(x)\sin nxdx ), \\\\ n=0,1,2,\cdots . $$
 
 ####一大坨：
 $$ \left\[ \begin{array}{c} X(0) \\\\ X(1) \\\\ X(2) \\\\ \vdots \\\\ X(N-1) \end{array} \right\] = \left\[\begin{array}{ccccc} \omega_N^{0\cdot 0}&\omega_N^{0\cdot 1}&\omega_N^{0\cdot 2}&\dots&\omega_N^{0\cdot (N-1)}\\\\ \omega_N^{1\cdot 0}&\omega_N^{1\cdot 1}&\omega_N^{1\cdot 2}&\dots&\omega_N^{1\cdot (N-1)}\\\\ \omega_N^{2\cdot 0}&\omega_N^{2\cdot 1}&\omega_N^{2\cdot 2}&\dots&\omega_N^{2\cdot (N-1)}\\\\ \vdots&\vdots&\vdots&\ddots&\vdots\\\\ \omega_N^{(N-1)\cdot 0}&\omega_N^{(N-1)\cdot 1}&\omega_N^{(N-1)\cdot 2}&\dots&\omega_N^{(N-1)\cdot (N-1)} \end{array}\right\] \cdot \left\[ \begin{array}{c} x(0) \\\\ x(1) \\\\ x(2) \\\\ \vdots \\\\ x(N-1) \end{array} \right\] \\\\
