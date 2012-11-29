@@ -3,7 +3,7 @@ layout: post
 title: "2012年的旅行"
 description: ""
 category: travel 
-tags: [photo,旅行]
+tags: [photo, 旅行]
 ---
 {% include JB/setup %}
 

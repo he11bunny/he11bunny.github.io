@@ -3,7 +3,7 @@ layout: post
 title: "Hello Github"
 description: ""
 category: 
-tags: [github,jekyll]
+tags: [github, jekyll]
 ---
 {% include JB/setup %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "前端也没有那么浅"
 description: ""
 category: tech
-tags: [Bret Victor,UI,分享]
+tags: [Bret Victor, UI, 分享]
 ---
 {% include JB/setup %}
 
