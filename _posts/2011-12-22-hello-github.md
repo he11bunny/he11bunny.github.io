@@ -22,7 +22,7 @@ tags: [github, jekyll]
 
 当然大部分人只是想搭个blog什么的，也不想自己太累，那么就要向大家介绍[Jekyll Bootstrap](https://github.com/plusjade/jekyll-bootstrap)了，一个简单的框架，提供了一些页面主题和api，包括留言评论和流量分析模块都已经有了。有了它，懒人只要直接folk它来当自己的主页项目，往里面填文章，主页也就搭完啦。
 
-如果还不满足，自己动手改改就行了，虽然Jekyll Bootstrap不能和Django、Rails比，但做个blog还是够用的。至于能做多好，就看自己js和css的功底，还有个人审美啦。
+如果还不满足，自己动手改改就行了，虽然Jekyll Bootstrap不能和Django、Rails比，但做个blog还是够用的。至于能做多好，就看自己js和css的功底，还有个人审美。
 
 ###域名绑定
 最后，如果不是一毛不拔的话，可以弄个自己的域名绑定到这里，github也是支持的。具体步骤可以看[这里](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)。
