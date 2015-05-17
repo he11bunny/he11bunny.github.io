@@ -1,0 +1,51 @@
+---
+layout: default 
+title: Home 
+tagline: Just bunny's log ;-) 
+---
+{% include JB/setup %}
+<div class="span8 col-container">
+    <div class="content">
+        <div class="page-header">
+            <h1>{{page.title}}
+                <small style="margin-left:10px;">{{page.tagline}}</small>
+            </h1>
+        </div>
+        <h3>Recent articles</h3>
+        {% for post in site.posts limit:5 %}
+        <div class="post-preview">
+            <h3>
+                <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+                <small style="margin-left:10px;">{{ post.date|date:"%b.%d %Y" }}</small>
+            </h3>
+            <h3>
+            </h3>
+            <p>{{ post.content| strip_html | truncate:120 }}
+                <p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="span4 col-container">
+    <div class="content">
+        <div class="page-header"></div>
+        <div class="myinfo-box">
+            <img src="head2-small.jpg" />
+            <div class="profile-box">
+                <span>{{ site.author.name }}</span>
+                <span>{{site.author.location}}</span>
+                <span>
+                    <a href="mailto:{{site.author.email}}">{{site.author.email}}</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="page-header">
+            <h4>Categories</h4>
+        </div>{% include custom/categories_cloud %}</div>
+    <div class="content">
+        <div class="page-header">
+            <h4>Tags</h4>
+        </div>{% include custom/tags_cloud %}</div>
+</div>

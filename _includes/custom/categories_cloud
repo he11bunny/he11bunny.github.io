@@ -1,0 +1,46 @@
+{% comment %}<!--
+The tags_list include is a listing helper for tags.
+Usage:
+  1) assign the 'tags_list' variable to a valid array of tags.
+  2) include JB/tags_list
+  example:
+    <ul>
+  	  {% assign tags_list = site.tags %}  
+  	  {% include custom/tags_cloud %}
+  	</ul>
+  
+  Notes: 
+    Tags can be either a Hash of tag objects (hashes) or an Array of tag-names (strings).
+    The encapsulating 'if' statement checks whether tags_list is a Hash or Array.
+    site.tags is a Hash while page.tags is an array.
+    
+  This helper can be seen in use at: ../_layouts/default.html
+-->{% endcomment %}
+<script type="text/javascript">
+ $(document).ready(function() {
+   if( ! $('#mycateCloudCanvas').tagcanvas({
+     textColour : '#000000',
+     outlineThickness : 1,
+     maxSpeed : 0.03,
+     depth : 0.75,
+	 weight : true,
+     weightMode : 'both'
+   })) {
+     // TagCanvas failed to load
+     $('#mycateCloudCanvas').hide();
+     $('#mycategorycloud .error').show();
+        }
+   // your other jQuery stuff here...
+  });
+</script>
+<div id="mycategorycloud">
+	<canvas width="250" height="155" id="mycateCloudCanvas" class="cloudCanvas">
+		<p>Ops, your browser sucks.</p>
+		<ul>
+		{% for cate in site.categories %} 
+			<li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ cate[0] }}-ref" style="font-size: {{ cate[1].size |times:6 |plus:9 }}px">{{ cate[0] }}</a></li>
+		{% endfor %}
+		</ul>
+	</canvas>
+	<h3 class="error" style="display:none">Your browser sucks, <a href="http://www.google.com/chrome" target="_blank">chrome</a> is a better chioce.</h3>
+</div>
